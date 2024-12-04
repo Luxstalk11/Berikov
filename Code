@@ -1,0 +1,13 @@
+@echo off 
+:login
+python login_system.py
+
+if %errorlevel%==0(
+    echo dostup berildi sizge,papka ashiluda...
+    start "" "C:\asdasd"
+    exit
+    ) else (
+    echo dostup berilgen jok,kaitalap koriniz...
+    pause
+    goto login
+    )
